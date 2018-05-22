@@ -1,0 +1,39 @@
+{
+  "author": "Ryan Weal",
+  "license": "MIT",
+  "name": "turbocart",
+  "description": "Open source shopping cart microservice.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/turbocart/turbocart",
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/turbocart/turbocart/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbocart/turbocart.git"
+  },
+  "contributors": [
+    {
+      "name": "Ryan Weal",
+      "github": "https://github.com/ryanweal"
+    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cassandra-driver": "^3.4.0",
+    "chai": "^4.1.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "express-cassandra": "^2.2.0",
+    "nodemon": "^1.11.0",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.83.0",
+    "stripe": "^4.24.0",
+    "twilio": "^3.13.0"
+  }
+}
