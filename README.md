@@ -45,7 +45,7 @@ Our goal is to have pre-built, configurable, migration tools for popular CMS pla
 
 Plugins we want to build will target migrations for:
 
- - WordPress / WooCommrece
+ - WordPress / WooCommerce
  - DrupalCommerce
  - Ubercart sites running on Drupal
  - Magento
@@ -60,13 +60,13 @@ We want to simplify migrations to the point where CMS developers can focus on *c
 
 We use node.js for the API and Apache Cassandra as the database. The reason for this is the ability to scale (Cassandra scales linearly), but also so that the service is fault-tolerant to network outages.
 
-If your store starts getting very popular you can simply add more copies of the node.js API service to your production environment, and likewise you can add more physical databases into Cassandra's data Ring, so that you can sale infinitely. 
+If your store starts getting very popular you can simply add more copies of the node.js API service to your production environment and/or add more physical databases into Cassandra's data Ring, so that you can scale infinitely. 
 
 We recommend you follow Cassandra's suggestions by putting the databases directly on the network but you can also choose to run them in Kubernetes or another container orchestration system.
 
 Generally we like to run the database ring as a different service than the node.js API "web workers" to have the most precision in determining how to scale.
 
-Cassandra itself is a response to Amazon's Dynamo paper and allows you to tune Turbocart performance based on your specific needs for consistency, reliability, and performance (ie, the CAP theorem).
+Cassandra itself is a response to Amazon's Dynamo paper and allows you to tune Turbocart performance based on your specific needs for consistency, availability, and performance (ie, the CAP theorem).
 
 You can run the node.js API endpoints as a "serverless" configuration if you don't mind waiting for those services to start up. For optimal performance we generally prefer to run in a server environment to reduce the chance of users facing a startup delay.
 
