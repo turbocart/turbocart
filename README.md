@@ -18,7 +18,7 @@ zero-downtime service across multiple clouds.
 ## Turbocart in your CMS
 
 One key thing is that your sales data no longer resides
-*within* your CMS (content management system), separating things out so that your CMS performs better. Most shopping carts that live "within" your CMS make your CMS perormance very bad. Turbocart solves this issue.
+*within* your CMS (content management system), separating things out so that your CMS performs better. Most shopping carts that live "within" your CMS make your CMS performance very bad. Turbocart solves this issue.
 
 The Turbocart API is designed to minimize server communication
 so with your old CMS-based solution you may have dozens or
@@ -30,7 +30,7 @@ We provide a basic "shopping cart" front-end service that
 you can use as an attachment on your website, or you can code
 your own and just submit the results to the API.
 
-Our product roadmap includes making plugins for popuar CMS
+Our product road-map includes making plugins for popular CMS
 systems to make it even simpler to manage adding products
 to your pages.
 
@@ -39,14 +39,14 @@ Turbocart is also ideal for inclusion on statically-generated websites allowing 
 
 ## Migrating from a CMS cart to Turbocart
 
-The Turbocart team has migrated dozens of e-commerce stores across different platforms. We are desiging the system with this in mind.
+The Turbocart team has migrated dozens of e-commerce stores across different platforms. We are designing the system with this in mind.
 
 Our goal is to have pre-built, configurable, migration tools for popular CMS platforms. We want it to be as simple as including a Turbocart plugin in your CMS, running the migration, and then disabling your old commerce system. Yes, we are suggesting that in many cases this could be an "in-place" migration(!).
 
 Plugins we want to build will target migrations for:
 
  - WordPress / WooCommrece
- - DrupaCommerce
+ - DrupalCommerce
  - Ubercart sites running on Drupal
  - Magento
  - ... and more
@@ -60,7 +60,7 @@ We want to simplify migrations to the point where CMS developers can focus on *c
 
 We use node.js for the API and Apache Cassandra as the database. The reason for this is the ability to scale (Cassandra scales linearly), but also so that the service is fault-tolerant to network outages.
 
-If your store starts getting very popuar you can simply add more copies of the node.js API service to your production environment, and likewise you can add more physical databases into Cassandra's data Ring, so that you can sale infinitely. 
+If your store starts getting very popular you can simply add more copies of the node.js API service to your production environment, and likewise you can add more physical databases into Cassandra's data Ring, so that you can sale infinitely. 
 
 We recommend you follow Cassandra's suggestions by putting the databases directly on the network but you can also choose to run them in Kubernetes or another container orchestration system.
 
@@ -71,7 +71,7 @@ Cassandra itself is a response to Amazon's Dynamo paper and allows you to tune T
 You can run the node.js API endpoints as a "serverless" configuration if you don't mind waiting for those services to start up. For optimal performance we generally prefer to run in a server environment to reduce the chance of users facing a startup delay.
 
 
-## Relese schedule:
+## Release schedule:
 
   - Initial release (beta): June 2018
   - Second major release: December 2018
@@ -83,7 +83,7 @@ Releases will follow a 6-month release cycle.
 
 As we put the finishing touches on version 1 we are inviting store owners and developers to join our technology preview.
 
-For qualifining sites we will help you with migrating existing
+For qualifying sites we will help you with migrating existing
 data and get your content ready for launch. For others, we will help answer questions. We also welcome code review.
 
 We are also looking for help putting final touches on the documentation site which will help developers and users get started with the service.
@@ -93,7 +93,7 @@ Email the Kafei Interactive team to get access to the technology preview: turboc
 
 ## Copyright and License
 
-Licence is MIT.
+License is MIT.
 
 Work is sponsored by Kafei Interactive Inc.
 
