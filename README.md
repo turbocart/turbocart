@@ -1,6 +1,8 @@
 # turbocart
 Open source shopping cart microservice.
 
+![turbocart logo](misc/turbocart-yellow-400.png)
+
 _See below for instructions on how to get access to our technology preview._
 
 
